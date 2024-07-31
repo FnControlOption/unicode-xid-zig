@@ -1,0 +1,17 @@
+.{
+    .name = "unicode-xid",
+    .version = "0.1.0",
+    .minimum_zig_version = "0.14.0-dev.367+a57479afc",
+
+    .paths = .{
+        "scripts/unicode.py",
+        "COPYRIGHT-RUST",
+        "LICENSE-APACHE",
+        "LICENSE-MIT",
+        "README.md",
+        "build.zig",
+        "build.zig.zon",
+        "tables.zig",
+        "unicode_xid.zig",
+    },
+}

@@ -141,4 +141,4 @@ pub const unicode_version: struct { u64, u64, u64 } = .{ %s, %s, %s };
         want_derived = ["XID_Start", "XID_Continue"]
         derived = load_properties("DerivedCoreProperties.txt", want_derived)
         for cat in sorted(want_derived):
-            emit_table(rf, cat, derived[cat])
+            emit_table(rf, cat.lower(), derived[cat])

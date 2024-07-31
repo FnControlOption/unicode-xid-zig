@@ -42,7 +42,7 @@ pub inline fn isXidStart(c: u21) bool {
     // Fast-path for ascii idents
     return ('a' <= c and c <= 'z') or
         ('A' <= c and c <= 'Z') or
-        (c > '\x7f' and bsearchRangeTable(c, tables.XID_Start));
+        (c > '\x7f' and bsearchRangeTable(c, tables.xid_start));
 }
 
 /// Returns whether the specified char satisfies the 'XID_Continue'
@@ -57,7 +57,7 @@ pub inline fn isXidContinue(c: u21) bool {
         ('A' <= c and c <= 'Z') or
         ('0' <= c and c <= '9') or
         c == '_' or
-        (c > '\x7f' and bsearchRangeTable(c, tables.XID_Continue));
+        (c > '\x7f' and bsearchRangeTable(c, tables.xid_continue));
 }
 
 test isXidStart {

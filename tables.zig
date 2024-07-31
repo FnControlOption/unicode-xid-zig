@@ -17,7 +17,7 @@ pub const Range = struct { u21, u21 }; // FIXME: https://github.com/ziglang/zig/
 /// that this version of unicode-xid is based on.
 pub const unicode_version: struct { u64, u64, u64 } = .{ 15, 1, 0 };
 
-pub const XID_Continue: []const Range = &.{
+pub const xid_continue: []const Range = &.{
     . { '\u{30}', '\u{39}' },
     . { '\u{41}', '\u{5a}' },
     . { '\u{5f}', '\u{5f}' },
@@ -796,7 +796,7 @@ pub const XID_Continue: []const Range = &.{
     . { '\u{e0100}', '\u{e01ef}' },
 };
 
-pub const XID_Start: []const Range = &.{
+pub const xid_start: []const Range = &.{
     . { '\u{41}', '\u{5a}' },
     . { '\u{61}', '\u{7a}' },
     . { '\u{aa}', '\u{aa}' },
